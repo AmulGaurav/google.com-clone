@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Google</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <img class="logo-img" src="./google.png" />
+      <input
+        class="search-input"
+        type="text"
+        onkeydown="if (event.key == 'Enter') search()"
+        autofocus
+      />
+      <div class="btn-wrapper">
+        <button class="btn" id="search-button" onclick="search()">
+          Google Search
+        </button>
+        <button class="btn" onclick="feelingLucky()">I'm Feeling Lucky</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
